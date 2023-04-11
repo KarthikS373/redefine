@@ -1,0 +1,14 @@
+{
+  "name": "redefine",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"cd packages/app yarn dev\" \"cd packages/server yarn dev\"",
+    "build": "concurrently \"cd packages/app yarn build\" \"cd packages/server yarn build\"",
+    "start": "concurrently \"cd packages/app yarn start\" \"cd packages/server yarn start\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
